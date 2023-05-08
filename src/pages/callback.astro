@@ -1,8 +1,8 @@
 ---
-const token = window.location.hash.substr(1).split("&")[0].split("=")[1]
-sessionStorage.setItem("xtoken", token)
-
-window.location.href = "/app"
+import { Layout } from "@globals"
+import CallBackComponent from "@component/Callback"
 ---
 
-<h1>Token: Redirect...</h1>
+<Layout title="redirect...">
+	<CallBackComponent client:only />
+</Layout>
