@@ -7,11 +7,18 @@ const scope = "user-read-private user-read-email"
 ---
 
 <Layout title="Login">
-	<h1>Login</h1>
-
-	<a
-		class="bg-white px-5 py-3 rounded-full"
-		href=`https://accounts.spotify.com/authorize?response_type=${responsetype}&client_id=${clientid}&redirect_uri=${redirect_uri}&scope=${scope}`
-		>Login</a
+	<main
+		class="absolute top-0 left-0 z-10 bg-zinc-900 h-full w-full flex items-center justify-center flex-col"
 	>
+		<h1 class="text-white text-xl font-black mb-3">
+			Aubigo <span class="text-green-500">flow</span>
+		</h1>
+		<h1 class="text-white text-3xl font-medium mb-10">Login with Spotify</h1>
+
+		<a
+			class="bg-white px-8 font-medium py-3 rounded-full"
+			href=`https://accounts.spotify.com/authorize?response_type=${responsetype}&client_id=${clientid}&redirect_uri=${redirect_uri}&scope=${scope}`
+			>Login</a
+		>
+	</main>
 </Layout>

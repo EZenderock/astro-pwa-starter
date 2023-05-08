@@ -8,6 +8,7 @@ import "@style/tailwind.css"
 // Helper imports
 import { seoConfig } from "@util/seoConfig"
 import Footer from "../Footer/Footer.astro"
+import AuthComponent from "@component/Auth"
 
 // Props
 export interface Props {
@@ -41,6 +42,7 @@ const {
 
 <html lang="en">
 	<head>
+		<AuthComponent client:load />
 		<!-- SEO. -->
 		<SEO
 			title={title}
