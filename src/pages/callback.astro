@@ -1,0 +1,8 @@
+---
+const token = window.location.hash.substr(1).split("&")[0].split("=")[1]
+sessionStorage.setItem("xtoken", token)
+
+window.location.href = "/app"
+---
+
+<h1>Token: Redirect...</h1>

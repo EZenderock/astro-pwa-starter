@@ -21,7 +21,7 @@ export default function FollowedArtist() {
 					<button className="h-[100px] w-[100px] rounded-full bg-zinc-800"></button>
 					<p className="truncate">{name}</p>
 					<p className="truncate text-zinc-500 text-sm">{artists.map((art) => (
-						<span> {art.name}.</span>
+						<span key={`id-art-${art.name}`}> {art.name}.</span>
 					))}</p>
 				</nav>
 			))}

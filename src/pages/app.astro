@@ -1,0 +1,42 @@
+---
+// Component imports
+import BestPlaylist from "@component/BestPlaylist.jsx"
+import DailyNews from "@component/DailyNews.astro"
+import FollowedArtist from "@component/FollowedArtist.jsx"
+import { Layout } from "@globals"
+---
+
+<Layout title="Home">
+	<main class="h-[100dvh] w-full bg-zinc-950 text-zinc-50">
+		<header class="h-[10%] flex items-center justify-between px-[3%]">
+			<nav>
+				<h1 class="text-3xl font-black">Good morning</h1>
+			</nav>
+			<nav>
+				<button class="h-[50px] w-[50px] rounded-full bg-zinc-800"> </button>
+			</nav>
+		</header>
+		<section class="h-[30%] mt-[5%] px-[3%]">
+			<h1 class="text-xl font-semibold">Top tracks</h1>
+			<FollowedArtist client:load />
+		</section>
+		<section class="px-[3%]">
+			<nav class="flex items-center justify-between">
+				<h1 class="text-xl font-semibold">Best playlists</h1>
+				<button class="px-2 py-1 text-sm bg-zinc-800 rounded-full"
+					>See all</button
+				>
+			</nav>
+			<BestPlaylist />
+		</section>
+		<section class="px-[3%] pt-[8%] pb-[16%]">
+			<nav class="flex items-center justify-between">
+				<h1 class="text-xl font-semibold">Daily news</h1>
+				<button class="px-2 py-1 text-sm bg-zinc-800 rounded-full"
+					>See all</button
+				>
+			</nav>
+			<DailyNews />
+		</section>
+	</main>
+</Layout>

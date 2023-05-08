@@ -1,6 +1,6 @@
 // Authorization token that must have been created previously. See : https://developer.spotify.com/documentation/web-api/concepts/authorization
 const token =
-	"BQBKZ7_L81S47tmi0fNopr-4fT9RQWRdGhnOkAqpObQ5UNZl-DXvma5IswinTeRMVicCZ3rJ2oo60C7DzURaQoHidfMKnQfGoufwVXvlQB1ZBkgrHPZ-Pq6mLL8_cNhT9Qc1mT8rB_eHbl7b5bBkPlqMfAgtlwrqyToDViBHjKqqkgh_HbukYnZDqcxF7geYNdIOlIyqV_zIs_RZcLR0gI1Qdq4bYlluxnmNc4Og2mP3Kl0wv65SHOBHnHNl3autcy9CWh--JXuzjzdR7WzzPi9Ikr0QM2VbvlpiWu87ng"
+	"BQBbGTrvWZcQKSR9STspmHGFGXRUkUbi6URpvAiCwwEkA-O_oUeFBj12QVEBf0RWM06SNdBWQukUKDeCYCaS4b-bkSouri-Sky7FUstXxwHoLDnHA-k16aNenI_nDVTuzZ9gVdVLLfjhLcGbJjnnCf2klv9xTMYXR_782u5KSVr-lyAIytbBtpFXhPKIKkXIJl048lCbk7fK83n1373kNCtsKthI_VRFjIbyEWftNYJDyb-cNDmoaXZmgcewQo3CPVZsGKPqo_4MUgnWuwNnqUcwzJHo9bWKD6r-z-2TKg"
 async function fetchWebApi(endpoint, method, body) {
 	const res = await fetch(`https://api.spotify.com/${endpoint}`, {
 		headers: {
