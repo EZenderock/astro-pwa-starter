@@ -4,7 +4,7 @@ import { Layout } from "@globals"
 ---
 
 <Layout title="Home">
-	<main class="h-screen w-full bg-zinc-900 text-zinc-50">
+	<main class="h-screen w-full bg-zinc-950 text-zinc-50">
 		<header class="h-[10%] flex items-center justify-between px-[3%]">
 			<nav>
 				<h1 class="text-3xl font-black">Good morning</h1>
@@ -15,7 +15,7 @@ import { Layout } from "@globals"
 		</header>
 		<section class="h-[35%] mt-[5%] px-[3%]">
 			<h1 class="text-xl font-semibold">Followed artists</h1>
-			<div class="mt-[4%] flex items-center justify-between">
+			<div class="mt-[4%] flex items-center gap-[8%] overflow-x-hidden">
 				<nav class="text-center">
 					<button class="h-[100px] w-[100px] rounded-full bg-zinc-800"></button>
 					<p>Artist name</p>
@@ -102,5 +102,34 @@ import { Layout } from "@globals"
 				</nav>
 			</div>
 		</section>
+		<footer
+			class="bottom-0 fixed h-[100px] flex items-center justify-between px-[3%] w-full left-0 rounded-t-2xl bg-zinc-950"
+		>
+			<nav class="text-center flex items-center justify-center flex-col">
+				<svg
+					class="h-[20px] w-[20px] fill-zinc-500"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+				>
+					<g>
+						<path fill="none" d="M0 0h24v24H0z"></path>
+						<path
+							d="M19 21H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9a1 1 0 0 1-1 1zM6 19h12V9.157l-6-5.454-6 5.454V19zm6-4a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"
+						></path>
+					</g>
+				</svg>
+
+				<p>Home</p>
+			</nav>
+			<nav>
+				<p>Artists</p>
+			</nav>
+			<nav>
+				<p>Search</p>
+			</nav>
+			<nav>
+				<p>Profile</p>
+			</nav>
+		</footer>
 	</main>
 </Layout>
