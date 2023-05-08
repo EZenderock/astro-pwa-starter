@@ -7,6 +7,7 @@ import "@style/tailwind.css"
 
 // Helper imports
 import { seoConfig } from "@util/seoConfig"
+import Footer from "../Footer/Footer.astro"
 
 // Props
 export interface Props {
@@ -165,7 +166,7 @@ const {
 		<main class="flex flex-1 flex-col h-[100%] w-full">
 			<slot />
 		</main>
-
+		<Footer />
 		<script>
 			// This is a hack to get vite-plugin-pwa to generate a sw.js file.
 			// Do not remove this script tag.

@@ -12,17 +12,9 @@ async function fetchWebApi(endpoint, method, body) {
 	return await res.json()
 }
 
-async function getTopTracks() {
+export async function getTopTracks() {
 	// Endpoint reference : https://developer.spotify.com/documentation/web-api/reference/get-users-top-artists-and-tracks
 	return (
 		await fetchWebApi("v1/me/top/tracks?time_range=short_term&limit=5", "GET")
 	).items
 }
-
-const topTracks = await getTopTracks()
-console.log(
-	topTracks?.map(
-		({ name, artists }) =>
-			`${name} by ${artists.map((artist) => artist.name).join(", ")}`
-	)
-)
