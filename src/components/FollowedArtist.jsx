@@ -6,7 +6,7 @@ export default function FollowedArtist() {
 
 	useEffect(() => {
 		async function fetchData() {
-			const topTracks = await getTopTracks();
+			const topTracks = await getTopTracks(sessionStorage.getItem("xtoken"));
 			setData(topTracks.map(({ name, artists }) => ({ name, artists })));
 		}
 		fetchData();
