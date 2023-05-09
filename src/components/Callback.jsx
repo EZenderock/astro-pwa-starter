@@ -12,6 +12,9 @@ export default function CallBackComponent() {
 	useEffect(() => {
 		const token = extractTokenFromUrl()
 		sessionStorage.setItem("xtoken", token)
+		setTimeout(() => {
+			window.location.href = "/app"
+		}, 1500);
 
 	}, [])
 
