@@ -4,7 +4,7 @@ export default function AuthComponent() {
 	const [show, setShow] = useState(false)
 	useEffect(() => {
 		const token = sessionStorage.getItem("xtoken")
-		if (token.length < 5) {
+		if (token) {
 			setTimeout(() => {
 				window.location.href = "/"
 			}, 1000)

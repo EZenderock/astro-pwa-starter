@@ -162,13 +162,13 @@ const {
 		<!-- Service worker registration. -->
 
 		<script is:inline src="/registerSW.js"></script>
+		<script is:inline src="../../utils/color.js"></script>
 		<link rel="manifest" href="/manifest.webmanifest" />
 	</head>
 	<body class="min-h-screen bg-zinc-950 flex flex-col w-full overflow-x-hidden">
 		<main class="flex flex-1 flex-col h-[100%] w-full">
 			<slot />
 		</main>
-		<Footer />
 		<script>
 			// This is a hack to get vite-plugin-pwa to generate a sw.js file.
 			// Do not remove this script tag.

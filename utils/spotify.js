@@ -11,6 +11,7 @@ async function fetchWebApi(endpoint, method, token, body) {
 }
 
 export async function getTopTracks(token) {
+	console.log(token)
 	// Endpoint reference : https://developer.spotify.com/documentation/web-api/reference/get-users-top-artists-and-tracks
 	return (
 		await fetchWebApi(
